@@ -1,1 +1,60 @@
-
+/* Estilização para o cabeçalho (header) */
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    margin: 0%;
+    }
+    
+    /* Estilização para a navegação (nav) dentro do cabeçalho */
+    nav {
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    }
+    
+    /* Estilização para o body (cor de fundo ) */
+    body {
+    background-color: rgb(53, 145, 145);
+    }
+    
+    /* Estilização para o corpo principal (main) */
+    main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    }
+    
+    /* Estilização para o parágrafo (p) dentro do corpo */
+    p {
+    line-height: 1.6;
+    flex: 1;
+    font-size: 18px;
+    color: #fff;
+    padding-right: 10px;
+    }
+    
+    /* Estilização para a imagem (img) alinhada à esquerda */
+    .imagem {
+    width: 700px;
+    height: auto;
+    }
+    
+    /* Estilização para o rodapé (footer) */
+    .rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* ou position: absolute; */
+    bottom: 0; /* ou outra posição desejada */
+    left: 0;
+    right: 0;
+    }
