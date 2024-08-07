@@ -20,7 +20,7 @@ nav a {
 
 /* Estilização para o body (cor de fundo) */
 body {
-    background: linear-gradient(to bottom, #90ee90 33.33%, #8b4513 33.33% 66.66%, #add8e6 66.66%);
+    background: linear-gradient(to right, #654321 33.33%, #006400 33.33% 66.66%, #00008b 66.66%);
     margin: 0; /* Remove a margem padrão */
     height: 100vh; /* Garante que o fundo cubra toda a altura da viewport */
 }
@@ -60,4 +60,3 @@ p {
     left: 0;
     right: 0;
 }
-    }
