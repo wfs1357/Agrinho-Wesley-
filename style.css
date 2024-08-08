@@ -1,52 +1,56 @@
 /* Estilização para o cabeçalho (header) */
 header {
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 2%;
     text-align: center;
-    margin: 0%;
+    margin: 0;
 }
 
 /* Estilização para a navegação (nav) dentro do cabeçalho */
 nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 2%;
     text-decoration: none;
     color: #333;
+    font-size: 1rem;
 }
 
 /* Estilização para o body (cor de fundo) */
 body {
     background: linear-gradient(to right, #654321 33.33%, #006400 33.33% 66.66%, #00008b 66.66%);
-    margin: 0; /* Remove a margem padrão */
-    height: 100vh; /* Garante que o fundo cubra toda a altura da viewport */
+    margin: 0;
+    min-height: 100vh;
 }
 
 /* Estilização para o corpo principal (main) */
 main {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 /* Estilização para o parágrafo (p) dentro do corpo */
 p {
     line-height: 1.6;
-    flex: 1;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #fff;
-    padding-right: 10px;
+    padding: 0 5%;
+    text-align: justify;
 }
 
-/* Estilização para a imagem (img) alinhada à esquerda */
+/* Estilização para a imagem (img) */
 .imagem {
-    width: 700px;
+    max-width: 100%;
     height: auto;
+    margin: 20px 0;
 }
 
 /* Estilização para o rodapé (footer) */
@@ -54,9 +58,49 @@ p {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed; /* ou position: absolute; */
-    bottom: 0; /* ou outra posição desejada */
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
     left: 0;
     right: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-right: 2%;
+    }
+
+    .imagem {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 80%;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .imagem {
+        max-width: 40%;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
 }
